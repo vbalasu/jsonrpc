@@ -1,0 +1,14 @@
+{
+  "name": "jsonrpc",
+  "version": "1.0.0",
+  "description": "You can easily create a python server script and expose functions that can be called remotely.",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jayson": "^2.0.6"
+  }
+}
