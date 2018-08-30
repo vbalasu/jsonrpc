@@ -21,3 +21,20 @@ server.register_function(lambda x,y: x+y, 'add')
 server.register_function(lambda x: x, 'ping')
 server.serve_forever()
 ```
+
+#### client.py
+```
+import jsonrpclib
+server = jsonrpclib.ServerProxy('http://127.0.0.1:8080')
+print(server.add(5,6))
+```
+
+## Javascript Client
+
+#### client.js
+```
+//npm install -g jayson
+var jayson = require('jayson')
+var client = jayson.client.http({host:"127.0.0.1", port:8080})
+client.request('add', [2,3], function(err, response) {console.log(response)})
+```
