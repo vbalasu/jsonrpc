@@ -7,7 +7,7 @@ def months():
 def now():
   return str(datetime.datetime.now())
 
-server = SimpleJSONRPCServer(('localhost', 8080))
+server = SimpleJSONRPCServer(('0.0.0.0', 8080))
 server.register_function(pow)
 server.register_function(months)
 server.register_function(now)
